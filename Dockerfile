@@ -1,5 +1,7 @@
 FROM alpine
 
+LABEL org.opencontainers.image.description `Docker image for refresh AWS ECR credentials in kubernetes cluster`
+
 RUN apk update && apk add --update --no-cache \
     git \
     bash \

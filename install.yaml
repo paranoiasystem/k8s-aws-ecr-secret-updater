@@ -39,7 +39,7 @@ spec:
       restartPolicy: Never
       containers:
       - name: k8sawsecrsecretupdater
-        image: paranoiasystem93/k8sawsecrsecretupdater:latest
+        image: ghcr.io/paranoiasystem/k8s-aws-ecr-secret-updater:latest
         imagePullPolicy: Always
         env:
         - name: AWS_ACCOUNT
@@ -67,7 +67,7 @@ spec:
           restartPolicy: Never
           containers:
           - name: k8sawsecrsecretupdater
-            image: paranoiasystem93/k8sawsecrsecretupdater:latest
+            image: ghcr.io/paranoiasystem/k8s-aws-ecr-secret-updater:latest
             imagePullPolicy: Always
             env:
             - name: AWS_ACCOUNT
